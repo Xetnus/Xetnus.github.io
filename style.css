@@ -1,7 +1,7 @@
 html {
-    margin-left: 21em;
+    /*margin-left: 21em;
     margin-right: 21em;
-    margin-top: 2em;
+    margin-top: 2em;*/
 }
 
 @media only screen and (max-width: 500px), 
@@ -111,6 +111,8 @@ p {
 }
 
 #img-portrait {
+    display: block;
+    margin: 0 auto;
     margin-top: 5px;
 }
 
@@ -120,7 +122,8 @@ p {
 }
 
 footer {
-    margin: 0 60px;
+    width: 875px;
+    margin: auto;
 }
 
 footer p {
