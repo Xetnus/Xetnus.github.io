@@ -1,0 +1,144 @@
+html {
+    margin-top: 2em;
+}
+
+header {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-color: #000;
+}
+
+header h1 {
+    width: 100%;
+    margin: auto;
+    font-family: "Droid Serif", serif;
+    margin-bottom: .5em; 
+}
+
+header h1 a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+
+header nav {
+    width: 100%;
+    margin: auto;
+}
+
+header nav ul {
+    text-align: center;
+    padding: 0;
+    margin: 0; 
+}
+
+header nav li {
+    display: inline-block;
+    border-right: 1px solid #000;
+    /* makes up for glitch where extra space is added to the left of the list item that I couldn't fix */
+    padding-right: 4.5px;
+}
+
+header nav li:last-child {
+    border-right: none;
+}
+
+header nav li a {
+    font-size: 1.8em;
+    color: #000000;
+    text-decoration: none;
+    padding: 0 8px 4px 8px;
+    outline: none; /* fixes Firefox's dotted outline on clicked-on anchors */
+}
+
+@keyframes nav_hover {
+    from { color: #000; }
+    to { color: #b0b0b0; }
+}
+
+header nav li a:hover:not(.active) {
+    animation-name: nav_hover;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav_fade_in {
+    from { background-color: white; }
+    to { background-color: #4CAF50; }
+}
+
+header nav li a.active {
+    color: white;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    animation-name: nav_fade_in;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#img-portrait {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 100%;
+    height: 15%;
+}
+
+footer {
+    margin: auto;
+    width: 100%;
+    height: 3.5em;
+    border-top-style: solid;
+    border-color: #000;
+}
+
+footer p {
+    width: 30%;
+    font-size: 1.2em;
+    margin: 0;
+    float: left;
+    padding-top: 18px;
+    margin-left: 15px;
+}
+
+#img-linkedin {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    float: left;
+    padding-top: 14px;
+}
+
+footer nav {
+    padding: 0;
+    width: 55%;
+    float: right;
+    margin: 0;
+}
+
+footer nav li {
+    font-size: 1.3em;
+    display: inline;
+    border-right: 1px solid #000;
+    /* makes up for glitch where extra space is added to the left of the list item that I couldn't fix */
+    padding-right: 4.5px;
+}
+
+footer nav li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+footer nav li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 0 8px 4px 8px;
+    outline: none; /* fixes Firefox's dotted outline on clicked-on anchors */
+}
