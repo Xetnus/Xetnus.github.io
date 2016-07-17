@@ -33,13 +33,17 @@ html {
 }
 
 header {
+    width: 50%;
     margin: auto;
     text-align: center;
+    padding-bottom: 10px;
     border-bottom-style: solid;
     border-color: #000;
 }
 
 header h1 {
+    width: 100%;
+    margin: auto;
     font-family: "Droid Serif", serif;
     margin-bottom: .5em; 
 }
@@ -51,16 +55,21 @@ header h1 a {
 }
 
 header nav {
-    margin: 18px auto;
-    margin-left: -35px; /* centers the navigation */
+    width: 100%;
+    margin: auto;
+}
+
+header nav ul {
+    text-align: center;
+    padding: 0;
+    margin: 0; 
 }
 
 header nav li {
-    display: inline;
+    display: inline-block;
     border-right: 1px solid #000;
-    
     /* makes up for glitch where extra space is added to the left of the list item that I couldn't fix */
-    padding-right: 4.5px; 
+    padding-right: 4.5px;
 }
 
 header nav li:last-child {
@@ -73,9 +82,6 @@ header nav li a {
     text-decoration: none;
     padding: 0 8px 4px 8px;
     outline: none; /* fixes Firefox's dotted outline on clicked-on anchors */
-    /*background-position: 100% 100%;*/
-    /*text-decoration: none;*/
-    /*background: url(./images/test_underline.gif) repeat-x 100% 100%;*/
 }
 
 @keyframes nav_hover {
