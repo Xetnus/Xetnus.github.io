@@ -1,7 +1,7 @@
 html {
-    /*margin-left: 21em;
+    margin-left: 21em;
     margin-right: 21em;
-    margin-top: 2em;*/
+    margin-top: 2em;
 }
 
 @media only screen and (max-width: 500px), 
@@ -32,14 +32,16 @@ html {
     box-shadow: inset 2em 0 3em -2em #3b658a;
 }
 
-.page-break {
+/*.page-break {
     border-bottom-style: solid;
     border-color: #000;
-}
+}*/
 
 header {
     margin: auto;
     text-align: center;
+    border-bottom-style: solid;
+    border-color: #000;
 }
 
 header h1 {
@@ -114,26 +116,45 @@ p {
     display: block;
     margin: 0 auto;
     margin-top: 5px;
-}
-
-#img-linkedin {
-    display: inline;
-    margin: 0px 20px -10px 65px;
+    width: 1000px;
+    height: 450px;
 }
 
 footer {
-    width: 875px;
-    margin: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: auto;
+    height: 3.5em;
+    border-top-style: solid;
+    border-color: #000;
 }
 
 footer p {
+    width: auto;
+    /*display: inline-block;*/
     font-size: 1.3em;
+    margin: 0;
+    margin-left: 15px;
+    float: left;
+    padding-top: 18px;
+}
+
+#img-linkedin {
+    /*display: inline-block;*/
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    float: left;
+    margin-left: 20px;
+    padding-top: 14px;
 }
 
 footer nav {
-    display: inline-block;
-    margin: 10px 0;
+    /*display: inline-block;*/
     padding: 0;
+    width: auto;
+    float: right;
+    margin: 0;
 }
 
 footer nav li {
@@ -141,11 +162,12 @@ footer nav li {
     display: inline;
     border-right: 1px solid #000;
     /* makes up for glitch where extra space is added to the left of the list item that I couldn't fix */
-    padding-right: 4.5px; 
+    padding-right: 4.5px;
 }
 
 footer nav li:last-child {
     border-right: none;
+    padding-right: 0;
 }
 
 footer nav li a {
