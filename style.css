@@ -132,7 +132,7 @@ footer {
 footer p {
     width: auto;
     /*display: inline-block;*/
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin: 0;
     margin-left: 15px;
     float: left;
@@ -158,7 +158,7 @@ footer nav {
 }
 
 footer nav li {
-    font-size: 1.4em;
+    font-size: 1.3em;
     display: inline;
     border-right: 1px solid #000;
     /* makes up for glitch where extra space is added to the left of the list item that I couldn't fix */
