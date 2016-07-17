@@ -1,6 +1,4 @@
 html {
-    margin-left: 21em;
-    margin-right: 21em;
     margin-top: 2em;
 }
 
@@ -14,7 +12,7 @@ html {
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 22em;
+    width: 25%;
     border-width: .25em;
     border-color: #3b658a;
     background-color: #6283a1;
@@ -31,11 +29,6 @@ html {
     border-left-style: solid;
     box-shadow: inset 2em 0 3em -2em #3b658a;
 }
-
-/*.page-break {
-    border-bottom-style: solid;
-    border-color: #000;
-}*/
 
 header {
     margin: auto;
@@ -116,43 +109,38 @@ p {
     display: block;
     margin: 0 auto;
     margin-top: 5px;
-    width: 1000px;
-    height: 450px;
+    width: 50%;
+    height: 5%;
 }
 
 footer {
-    margin-left: 50px;
-    margin-right: 50px;
-    width: auto;
+    margin: auto;
+    width: 50%;
     height: 3.5em;
     border-top-style: solid;
     border-color: #000;
 }
 
 footer p {
-    width: auto;
-    /*display: inline-block;*/
+    width: 30%;
     font-size: 1.2em;
     margin: 0;
-    margin-left: 15px;
     float: left;
     padding-top: 18px;
+    margin-left: 15px;
 }
 
 #img-linkedin {
-    /*display: inline-block;*/
     width: 32px;
     height: 32px;
     padding: 0;
     float: left;
-    margin-left: 20px;
     padding-top: 14px;
 }
 
 footer nav {
-    /*display: inline-block;*/
     padding: 0;
-    width: auto;
+    width: 55%;
     float: right;
     margin: 0;
 }
