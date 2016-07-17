@@ -6,6 +6,8 @@ html {
        only screen and (min-device-width: 768)
                    and (max-device-width: 1024px) {
     #left-border, #right-border { display: none; }
+    #img-portrait { width: 100%; height: 20%; }
+    footer { width: 100%; }
 }
 
 #left-border, #right-border {
