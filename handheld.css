@@ -7,12 +7,12 @@ html {
 }
 
 header {
-    width: 90%;
+    width: 95%;
     margin: auto;
     text-align: center;
     padding-bottom: 10px;
     border-bottom-style: solid;
-    border-color: #000;
+    border-color: rgba(0, 0, 0, .4);
 }
 
 header h1 {
@@ -24,7 +24,7 @@ header h1 {
 
 header h1 a {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: black;
 }
 
@@ -44,6 +44,7 @@ header nav li {
     border-right: 1px solid #000;
     /* makes up for glitch where extra space is added to the left of the list item that I couldn't fix */
     padding-right: 4.5px;
+    margin-bottom: 3px;
 }
 
 header nav li:last-child {
@@ -51,22 +52,11 @@ header nav li:last-child {
 }
 
 header nav li a {
-    font-size: 1.6em;
+    font-size: 1.5em;
     color: #000000;
     text-decoration: none;
     padding: 0 8px 4px 8px;
     outline: none; /* fixes Firefox's dotted outline on clicked-on anchors */
-}
-
-@keyframes nav_hover {
-    from { color: #000; }
-    to { color: #b0b0b0; }
-}
-
-header nav li a:hover:not(.active) {
-    animation-name: nav_hover;
-    animation-duration: .4s;
-    animation-fill-mode: forwards;
 }
 
 @keyframes nav_fade_in {
@@ -90,22 +80,22 @@ p {
 #img-portrait {
     display: block;
     margin: 0 auto;
-    margin-top: 5px;
+    margin-top: -3px;
     width: 100%;
     height: 15%;
 }
 
 footer {
     margin: auto;
-    width: 90%;
+    width: 95%;
     height: 3.5em;
     border-top-style: solid;
-    border-color: #000;
+    border-color: rgba(0, 0, 0, .4);
 }
 
 footer p {
     width: 30%;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0;
     float: left;
     padding-top: 10px;
@@ -128,7 +118,7 @@ footer nav {
 }
 
 footer nav li {
-    font-size: 1.3em;
+    font-size: 1.1em;
     display: inline;
     border-right: 1px solid #000;
     /* makes up for glitch where extra space is added to the left of the list item that I couldn't fix */

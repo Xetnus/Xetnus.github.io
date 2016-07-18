@@ -42,7 +42,7 @@ header {
     text-align: center;
     padding-bottom: 10px;
     border-bottom-style: solid;
-    border-color: #000;
+    border-color: rgba(0, 0, 0, .4);
 }
 
 header h1 {
@@ -120,7 +120,7 @@ p {
 #img-portrait {
     display: block;
     margin: 0 auto;
-    margin-top: 5px;
+    margin-top: -3px;
     width: 50%;
     height: 5%;
 }
@@ -130,7 +130,7 @@ footer {
     width: 50%;
     height: 3.5em;
     border-top-style: solid;
-    border-color: #000;
+    border-color: rgba(0, 0, 0, .4);
 }
 
 footer p {
