@@ -82,7 +82,6 @@ p {
     margin: 0 auto;
     margin-top: -3px;
     width: 100%;
-    height: 15%;
 }
 
 footer {
@@ -91,6 +90,10 @@ footer {
     height: 3.5em;
     border-top-style: solid;
     border-color: rgba(0, 0, 0, .4);
+}
+
+@media only screen and (max-width: 480px) {
+
 }
 
 footer p {

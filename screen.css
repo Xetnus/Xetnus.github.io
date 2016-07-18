@@ -18,7 +18,7 @@ html {
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 25%;
+    width: 20%;
     border-width: .25em;
     border-color: #3b658a;
     background-color: #6283a1;
@@ -37,10 +37,10 @@ html {
 }
 
 header {
-    width: 50%;
+    width: 60%;
     margin: auto;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     border-bottom-style: solid;
     border-color: rgba(0, 0, 0, .4);
 }
@@ -121,20 +121,19 @@ p {
     display: block;
     margin: 0 auto;
     margin-top: -3px;
-    width: 50%;
-    height: 5%;
+    width: 62%;
 }
 
 footer {
     margin: auto;
-    width: 50%;
+    width: 60%;
     height: 3.5em;
     border-top-style: solid;
     border-color: rgba(0, 0, 0, .4);
 }
 
 footer p {
-    width: 30%;
+    width: 25%;
     font-size: 1.2em;
     margin: 0;
     float: left;
@@ -152,9 +151,11 @@ footer p {
 
 footer nav {
     padding: 0;
-    width: 55%;
+    width: 60%;
     float: right;
     margin: 0;
+    text-align: right;
+    margin-right: 15px;
 }
 
 footer nav li {
