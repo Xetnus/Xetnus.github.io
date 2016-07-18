@@ -2,13 +2,13 @@ html {
     margin-top: 2em;
 }
 
-@media only screen and (max-width: 500px), 
+/*@media only screen and (max-width: 500px), 
        only screen and (min-device-width: 768)
                    and (max-device-width: 1024px) {
     #left-border, #right-border { display: none; }
     #img-portrait { width: 100%; height: 20%; }
     footer { width: 100%; }
-}
+}*/
 
 #left-border, #right-border {
     position: fixed;
