@@ -2,6 +2,10 @@ html {
     margin-top: 2em;
 }
 
+#left-border, #right-border {
+    display: none;
+}
+
 header {
     width: 90%;
     margin: auto;
@@ -14,13 +18,13 @@ header {
 header h1 {
     width: 100%;
     margin: auto;
-    font-family: "Droid Serif", serif;
-    margin-bottom: .5em; 
+    font-family: "Droid Serif", "Times", serif;
+    margin-bottom: .5em;
 }
 
 header h1 a {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: black;
 }
 
@@ -47,7 +51,7 @@ header nav li:last-child {
 }
 
 header nav li a {
-    font-size: 1.8em;
+    font-size: 1.6em;
     color: #000000;
     text-decoration: none;
     padding: 0 8px 4px 8px;
@@ -80,7 +84,7 @@ header nav li a.active {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 #img-portrait {
@@ -93,7 +97,7 @@ p {
 
 footer {
     margin: auto;
-    width: 100%;
+    width: 90%;
     height: 3.5em;
     border-top-style: solid;
     border-color: #000;
@@ -104,8 +108,8 @@ footer p {
     font-size: 1.2em;
     margin: 0;
     float: left;
-    padding-top: 18px;
-    margin-left: 15px;
+    padding-top: 10px;
+    margin-left: 5px;
 }
 
 #img-linkedin {
@@ -113,7 +117,7 @@ footer p {
     height: 32px;
     padding: 0;
     float: left;
-    padding-top: 14px;
+    padding-top: 12px;
 }
 
 footer nav {
