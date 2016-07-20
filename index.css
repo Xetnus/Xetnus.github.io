@@ -1,0 +1,23 @@
+#status {
+    font-size: 1.5em;
+    color: red;
+}
+
+p a {
+    text-decoration: none;
+    cursor: pointer;
+    color: darkblue;
+}
+
+p a:visited {
+    color: purple;
+}
+
+#img-portrait {
+    display: block;
+    margin: 0 auto;
+    margin-top: -3px;
+    width: 62%;
+}
+
+
