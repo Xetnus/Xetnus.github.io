@@ -31,6 +31,8 @@ header {
     padding-bottom: 12px;
     border-bottom-style: solid;
     border-color: rgba(0, 0, 0, .4);
+    background-image: url("./images/construction.jpg");
+    background-repeat: no-repeat;
 }
 
 header h1 {
