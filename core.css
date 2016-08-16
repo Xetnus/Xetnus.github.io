@@ -32,6 +32,7 @@ header {
     border-bottom-style: solid;
     border-color: rgba(0, 0, 0, .4);
     background-image: url("./images/construction.jpg");
+    background-size: 10em 5em;
     background-repeat: no-repeat;
 }
 
