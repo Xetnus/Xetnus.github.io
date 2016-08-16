@@ -44,21 +44,22 @@
     </header>
 
     <h2>I look forward to hearing from you!</h2>
-    <form>
+    <form action="https://formspree.io/contact@doubleg.me" method="POST">
 	<label id="lbl-name">
 	    <span>Name</span>
-	    <input type="text" id="name" placeholder="required">
+	    <input type="text" id="name" name="name" placeholder="required">
 	</label>
 	<label id="lbl-email">
 	    <span>Email</span>
-	    <input type="text" id="email" placeholder="required">
+	    <input type="text" id="email" name="_replyto" placeholder="required">
 	</label>
 	<label id="lbl-message">
 	    <span>Message</span>
-	    <textarea rows="6" placeholder="required"></textarea>
+	    <textarea rows="8" name="message" placeholder="required"></textarea>
 	</label>
 	<button type="button">Send</button>
     </form>
+    <h3>Otherwise, check me out on <a href="https://www.linkedin.com/in/grantgrubbs"><img src="./images/social_icons/linkedin.png" alt="LinkedIn" title="Join my network on LinkedIn"/></a></h3>
 
     <footer>
         <p>&copy; 2016 Grant W. Grubbs</p>
