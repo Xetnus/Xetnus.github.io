@@ -1,8 +1,13 @@
 #description {
-    width: 60%;
+    width: 30%;
     display: inline-block;
-    margin-left: 10em;
-    margin-right: 0;
+    margin-left: 30em;
+    /* REVISE THE CENTERING OF THE BUTTON AND PARAGRPH*/
+    margin-right: 5em;
+}
+
+p {
+    width: 100%;
 }
 
 form {
