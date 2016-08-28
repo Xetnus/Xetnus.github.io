@@ -1,19 +1,18 @@
 #description {
-    width: 30%;
-    display: inline-block;
-    margin-left: 30em;
+    width: 50%;
+    display: block;
+    margin: auto;
     /* REVISE THE CENTERING OF THE BUTTON AND PARAGRPH*/
-    margin-right: 5em;
 }
 
 p {
     width: 100%;
 }
 
-form {
-    display: inline-block;
-    margin-top: 2em;
-    vertical-align: top;
+/*form {
+    
+    width: 20%;
+    margin: auto;
 }
 
 button {
@@ -35,7 +34,7 @@ button {
     cursor: pointer;
     color: #ffffff;
     font-family: "Times", Georgia, Serif;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: bold;
     padding: 10px 28px;
     text-decoration: none;
@@ -56,19 +55,19 @@ button:hover {
 button:active {
     position: relative;
     top: 1px;
-}
+}*/
 
 table {
-    width: 40%;
+    width: 50%;
     margin: auto;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 0;
     font-family: "Times", Georgia, Serif;
-    font-size: 1.4em;
+    font-size: 1.2em;
     border-collapse: collapse;
-    border-style: solid;
+/*    border-style: solid;
     border-width: 1px;
-    border-color: black;
+    border-color: black;*/
 }
 
 table .major {
@@ -76,5 +75,26 @@ table .major {
 }
 
 td {
+    padding-top: .3em;
+    padding-bottom: .3em;
     text-align: center;
+}
+
+table .separator {
+    border-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-color: rgba(0, 0, 0, .4);
+    border-width: 1px;
+}
+
+table .separator td {
+    padding-top: .4em;
+    padding-bottom: .4em;
+}
+
+#note {
+    width: 50%;
+    font-size: .8em;
+    margin: auto;
 }

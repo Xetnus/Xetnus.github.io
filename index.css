@@ -3,16 +3,6 @@
     color: red;
 }
 
-p a {
-    text-decoration: none;
-    cursor: pointer;
-    color: darkblue;
-}
-
-p a:visited {
-    color: purple;
-}
-
 #img-portrait {
     display: block;
     margin: 0 auto;
