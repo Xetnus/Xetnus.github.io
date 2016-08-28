@@ -38,10 +38,27 @@
 
     </header>
 
-    <p>
-        <br><br><br><br><br><br><br><br><br><br><br><br> 
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-    </p>
+    <ul>
+        <li class="project">
+        <table>
+	    <colgroup>
+	        <col style="width: 15%">
+                <col style="width: 65%">
+	        <col style="width: 20%">
+	    </colgroup>
+            <tr>
+	        <th colspan="2">ePortfolio Website</th>
+	        <td><a href="https://github.com/Xetnus/Xetnus.github.io"><img class="img-github" src="./images/github.png" alt="GitHub" title="Check out the code on GitHub"/></a></td>
+	    </tr>
+            <tr>
+	        <td><img class="img-project-icon" src="./images/temp_icon.png" alt="Project's Icon"/></td>
+	        <td>Developed with HTML, JavaScript and CSS throughout the summer and fall of 2016. </td>
+	        <td><img class="img-down-button" src="./images/down_button.png" alt="more" title="View more detailed description"/></td>
+	    </tr>
+        </table>
+	    <aside class="description"><p>Temporary longer description</p></aside>
+        </li>
+    </ul>
 
     <footer>
         <p>&copy; 2016 Grant W. Grubbs</p>
@@ -56,5 +73,16 @@
         </ul>
 	</nav>
     </footer>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+	$(document).ready(function() {
+	    $(".description").slideUp("slow");
+	});
+
+	$(".img-down-button").click(function() {
+	    $(".description").slideDown("slow");
+	});
+    </script>
 </body>
 </html>
