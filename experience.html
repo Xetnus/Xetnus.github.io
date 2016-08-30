@@ -53,10 +53,10 @@
             <tr>
 	        <td><img class="img-project-icon" src="./images/temp_icon.png" alt="Project's Icon"/></td>
 	        <td>Developed with HTML, JavaScript and CSS throughout the summer and fall of 2016. </td>
-	        <td><img class="img-down-button" src="./images/down_button.png" alt="more" title="View more detailed description"/></td>
+	        <td><img class="img-down-button" src="./images/down_button.png" alt="more" title="Toggle detailed description"/></td>
 	    </tr>
         </table>
-	    <aside class="description"><p>Temporary longer description</p></aside>
+	<aside class="description"><p>Temporary longer description</p></aside>
         </li>
     </ul>
 
@@ -76,12 +76,17 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
-	$(document).ready(function() {
-	    $(".description").slideUp("slow");
-	});
-
+	// Controls the CSS animation of the arrow button
 	$(".img-down-button").click(function() {
-	    $(".description").slideDown("slow");
+	    if ($(this).hasClass("btn-less")) {
+	        $(".description").slideUp("slow");
+		$(this).removeClass("btn-less");
+		$(this).addClass("btn-more");
+	    } else {
+	        $(".description").slideDown("slow");
+		$(this).removeClass("btn-more");
+		$(this).addClass("btn-less");
+	    }
 	});
     </script>
 </body>

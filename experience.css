@@ -27,6 +27,11 @@ table td {
     display: block;
 }
 
+.description {
+    display: none;
+    font-size: .9em;
+}
+
 .img-github {
     width: 100px;
     height: 30px;
@@ -38,11 +43,57 @@ table td {
     cursor: pointer;
 }
 
+@keyframes upwards {
+    from  {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+.btn-less {
+    animation-name: upwards;
+    animation-duration: .6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes downwards {
+    from  {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    to {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.btn-more {
+    animation-name: downwards;
+    animation-duration: .6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 .img-project-icon {
     width: 60px;
     height: 60px;
-}
-
-aside {
-    font-size: .9em;
 }
