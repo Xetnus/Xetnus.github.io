@@ -2,60 +2,11 @@
     width: 50%;
     display: block;
     margin: auto;
-    /* REVISE THE CENTERING OF THE BUTTON AND PARAGRPH*/
 }
 
 p {
     width: 100%;
 }
-
-/*form {
-    
-    width: 20%;
-    margin: auto;
-}
-
-button {
-    -moz-box-shadow: inset 0px 1px 0px 0px #bbdaf7;
-    -webkit-box-shadow: inset 0px 1px 0px 0px #bbdaf7;
-    box-shadow: inset 0px 1px 0px 0px #bbdaf7;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5));
-    background: -moz-linear-gradient(top, #79bbff 5%, #378de5 100%);
-    background: -webkit-linear-gradient(top, #79bbff 5%, #378de5 100%);
-    background: -o-linear-gradient(top, #79bbff 5%, #378de5 100%);
-    background: -ms-linear-gradient(top, #79bbff 5%, #378de5 100%);
-    background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5',GradientType=0);
-    background-color: #79bbff;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    border: 1px solid #84bbf3;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: "Times", Georgia, Serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 10px 28px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #528ecc;
-}
-
-button:hover {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff));
-    background: -moz-linear-gradient(top, #378de5 5%, #79bbff 100%);
-    background: -webkit-linear-gradient(top, #378de5 5%, #79bbff 100%);
-    background: -o-linear-gradient(top, #378de5 5%, #79bbff 100%);
-    background: -ms-linear-gradient(top, #378de5 5%, #79bbff 100%);
-    background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff',GradientType=0);
-    background-color: #378de5;
-}
-
-button:active {
-    position: relative;
-    top: 1px;
-}*/
 
 table {
     width: 50%;
@@ -65,9 +16,6 @@ table {
     font-family: "Times", Georgia, Serif;
     font-size: 1.2em;
     border-collapse: collapse;
-/*    border-style: solid;
-    border-width: 1px;
-    border-color: black;*/
 }
 
 table .major {

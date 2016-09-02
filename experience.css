@@ -1,20 +1,6 @@
-table {
-    width: 100%;
-    margin: auto;
-}
-
-table th {
-    text-align: left;
-    font-size: 1.5em;
-}
-
-table td {
-    font-size: 1.2em;
-}
-
 .project {
     list-style-type: none;
-    width: 40%;
+    width: 50%;
     margin: auto;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -27,7 +13,22 @@ table td {
     display: block;
 }
 
-.description {
+table {
+    width: 100%;
+    margin: auto;
+}
+
+table th {
+    text-align: left;
+    font-size: 1.5em;
+    vertical-align: bottom;
+}
+
+table td {
+    font-size: 1.2em;
+}
+
+aside {
     display: none;
     font-size: .9em;
 }
@@ -37,10 +38,40 @@ table td {
     height: 30px;
 }
 
+.img-container {
+    height: 75px;
+    width: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+.img-container .more {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    left: 20px;
+    bottom: 8px;
+}
+
+.img-container .less {
+    display: none;
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    left: 30px;
+    top: 5px;
+}
+
 .img-down-button {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100px;
     height: 75px;
-    cursor: pointer;
 }
 
 @keyframes upwards {
@@ -63,7 +94,7 @@ table td {
 
 .btn-less {
     animation-name: upwards;
-    animation-duration: .6s;
+    animation-duration: .7s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -78,17 +109,17 @@ table td {
     }
 
     to {
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
 .btn-more {
     animation-name: downwards;
-    animation-duration: .6s;
+    animation-duration: .7s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }

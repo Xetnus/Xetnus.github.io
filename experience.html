@@ -42,8 +42,8 @@
         <li class="project">
         <table>
 	    <colgroup>
-	        <col style="width: 15%">
-                <col style="width: 65%">
+	        <col style="width: 10%">
+                <col style="width: 70%">
 	        <col style="width: 20%">
 	    </colgroup>
             <tr>
@@ -51,12 +51,16 @@
 	        <td><a href="https://github.com/Xetnus/Xetnus.github.io"><img class="img-github" src="./images/github.png" alt="GitHub" title="Check out the code on GitHub"/></a></td>
 	    </tr>
             <tr>
-	        <td><img class="img-project-icon" src="./images/temp_icon.png" alt="Project's Icon"/></td>
-	        <td>Developed with HTML, JavaScript and CSS throughout the summer and fall of 2016. </td>
-	        <td><img class="img-down-button" src="./images/down_button.png" alt="more" title="Toggle detailed description"/></td>
+	        <td><img class="img-project-icon" src="./images/eportfolio_project_icon.png" alt="Project's Icon"/></td>
+	        <td>Developed with HTML, JavaScript and CSS throughout the summer and fall of 2016. Created to provide a medium for recruitors to learn more about my experience and skills. </td>
+	        <td><div class="img-container" data-desc="#eportfolio-desc">
+		    <img class="img-down-button" src="./images/arrow_button.png" alt="more" title="Toggle detailed description"/>
+		    <p class="more">more</p>
+		    <p class="less">less</p>
+		</div></td>
 	    </tr>
         </table>
-	<aside class="description"><p>Temporary longer description</p></aside>
+	<aside id="eportfolio-desc"><p>Temporary longer description</p></aside>
         </li>
     </ul>
 
@@ -76,17 +80,34 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
+	var isAnimating = false;
 	// Controls the CSS animation of the arrow button
-	$(".img-down-button").click(function() {
-	    if ($(this).hasClass("btn-less")) {
-	        $(".description").slideUp("slow");
-		$(this).removeClass("btn-less");
-		$(this).addClass("btn-more");
-	    } else {
-	        $(".description").slideDown("slow");
-		$(this).removeClass("btn-more");
-		$(this).addClass("btn-less");
+	$(".img-container").click(function() {
+	    if (isAnimating) {
+		return;
 	    }
+
+	    isAnimating = true;
+	    var desc = $(this).data("desc");
+
+	    if ($(this.id + " .img-down-button").hasClass("btn-less")) {
+	        $(desc).slideUp("slow");
+		$(this.id + " .img-down-button").removeClass("btn-less");
+		$(this.id + " .img-container .less").fadeOut("fast");
+		$(this.id + " .img-down-button").addClass("btn-more");
+		$(this.id + " .img-container .more").fadeIn("slow");
+	    } else {
+	        $(desc).slideDown("slow");
+		$(this.id + " .img-down-button").removeClass("btn-more");
+		$(this.id + " .img-container .more").fadeOut("fast");
+		$(this.id + " .img-down-button").addClass("btn-less");
+		$(this.id + " .img-container .less").fadeIn("slow");
+	    }
+
+	    // Prevents spam clicking, which glitches the animation
+	    setTimeout(function() {
+		isAnimating = false;
+	    }, 600);
 	});
     </script>
 </body>
