@@ -6,7 +6,7 @@
 .project {
     list-style-type: none;
     width: 100%;
-    margin: 1em auto;
+    margin: 1.3em auto;
     margin-left: -1em;
 }
 
@@ -30,6 +30,18 @@ table th {
 
 table td {
     font-size: 1.2em;
+}
+
+.first-col {
+    width: 10%;
+}
+
+.second-col {
+    width: 74%;
+}
+
+.third-col {
+    width: 16%;
 }
 
 aside {
@@ -91,12 +103,9 @@ aside p {
     color: white;
     font-size: 25px;
     font-weight: bold;
-    /*left: 20px;*/
-    left: 20%;
-    /*width: 100px;
-    margin-left: auto;
-    margin-right: auto;*/
-    bottom: 8px;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 .img-container .less {
@@ -105,12 +114,9 @@ aside p {
     color: white;
     font-size: 25px;
     font-weight: bold;
-    /*left: 30px;*/
-    left: 20%;
-    /*width: 100px;
-    margin-left: auto;
-    margin-right: auto;*/
-    top: 5px;
+    top: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 @keyframes upwards {
