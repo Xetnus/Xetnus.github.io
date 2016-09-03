@@ -38,13 +38,13 @@
 
     </header>
 
-    <ul>
+    <ul id="projects">
         <li class="project">
         <table>
 	    <colgroup>
-	        <col style="width: 10%">
-                <col style="width: 70%">
-	        <col style="width: 20%">
+	        <col style="width: 9%">
+                <col style="width: 75%">
+	        <col style="width: 16%">
 	    </colgroup>
             <tr>
 	        <th colspan="2">ePortfolio Website</th>
@@ -54,13 +54,28 @@
 	        <td><img class="img-project-icon" src="./images/eportfolio_project_icon.png" alt="Project's Icon"/></td>
 	        <td>Developed with HTML, JavaScript and CSS throughout the summer and fall of 2016. Created to provide a medium for recruitors to learn more about my experience and skills. </td>
 	        <td><div class="img-container" data-desc="#eportfolio-desc">
-		    <img class="img-down-button" src="./images/arrow_button.png" alt="more" title="Toggle detailed description"/>
+		    <img class="img-arrow-button" src="./images/arrow_button.png" alt="more" title="Toggle detailed description"/>
 		    <p class="more">more</p>
 		    <p class="less">less</p>
 		</div></td>
 	    </tr>
         </table>
-	<aside id="eportfolio-desc"><p>Temporary longer description</p></aside>
+	<aside id="eportfolio-desc">
+	    <ul class="tools">
+		<li>HTML</li>
+		<li>JavaScript</li>
+		<li>jQuery</li>
+		<li>CSS</li>
+		<li>Ubuntu</li>
+		<li>Vim</li>
+		<li>GitHub Pages</li>
+	    </ul>
+	    <p><b>Problem:</b> I was unsatisfied with how little information recruiters could gather about me by simply reading my resume. I also wanted to increase my professional web presence to make it easier for recruiters to find and contact me.</p>
+	    <p><b>Solution:</b> In the end, I reasoned that developing my own e-portfolio website would be a great way for recruiters to learn more about my skills and work experience.</p>
+	    <p><b>Process:</b> Beginning this project, I hardly knew anything about web development. I knew the very basics of HTML and the syntax of JavaScript, due to my familiarity with Java. I had heard of CSS, but had never tried to learn it. So, I started from scratch. I spent a few weeks getting familiar with the languages I would need to use.</p>
+	    <p>I carefully laid out a paper prototype of how I wanted my website to look. Then, I tried my best to replicate my prototype using HTML and CSS. I went through each page and carefully crafted the code to match the design of my prototype, learning a lot along the way. Slowly, it all came together.</p>
+	    <p><b>Final thoughts:</b> Now that my website is complete, I can look back at my progress and feel proud of what I created. Through this project, I feel a lot more confident in my web development ability. </p>
+	</aside>
         </li>
     </ul>
 
@@ -90,18 +105,26 @@
 	    isAnimating = true;
 	    var desc = $(this).data("desc");
 
-	    if ($(this.id + " .img-down-button").hasClass("btn-less")) {
+	    if ($(this.id + " .img-arrow-button").hasClass("btn-less")) {
 	        $(desc).slideUp("slow");
-		$(this.id + " .img-down-button").removeClass("btn-less");
-		$(this.id + " .img-container .less").fadeOut("fast");
-		$(this.id + " .img-down-button").addClass("btn-more");
-		$(this.id + " .img-container .more").fadeIn("slow");
+		$(this.id + " .img-arrow-button").removeClass("btn-less");
+		$(this.id + " .img-container .less").fadeOut("slow");
+		$(this.id + " .img-arrow-button").addClass("btn-more");
+
+		setTimeout(fadeInMore(this), 300);
+		function fadeInMore(element) {
+		    $(element.id + " .img-container .more").fadeIn("slow");
+		}
 	    } else {
 	        $(desc).slideDown("slow");
-		$(this.id + " .img-down-button").removeClass("btn-more");
-		$(this.id + " .img-container .more").fadeOut("fast");
-		$(this.id + " .img-down-button").addClass("btn-less");
-		$(this.id + " .img-container .less").fadeIn("slow");
+		$(this.id + " .img-arrow-button").removeClass("btn-more");
+		$(this.id + " .img-container .more").fadeOut("slow");
+		$(this.id + " .img-arrow-button").addClass("btn-less");
+
+		setTimeout(fadeInLess(this), 300);
+		function fadeInLess(element) {
+		    $(element.id + " .img-container .less").fadeIn("slow");
+		}
 	    }
 
 	    // Prevents spam clicking, which glitches the animation
