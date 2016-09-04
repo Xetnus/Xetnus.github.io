@@ -125,6 +125,7 @@ footer {
     height: 3.5em;
     border-top-style: solid;
     border-color: rgba(0, 0, 0, .4);
+    clear: left;
 }
 
 footer p {

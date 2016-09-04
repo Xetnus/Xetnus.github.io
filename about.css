@@ -1,0 +1,19 @@
+#main {
+    width: 50%;
+    margin: 1em auto;
+}
+
+#main #portrait {
+    width: 27%;
+    height: 290px;
+    display: inline-block;
+    padding-right: 1em;
+    float: left;
+}
+
+#main p {
+    width: 70%;
+    font-size: 1.2em;
+    display: inline;
+    float: left;
+}
