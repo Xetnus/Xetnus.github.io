@@ -72,6 +72,11 @@ aside p {
     margin-left: 0;
 }
 
+.img-project-icon {
+    width: 60px;
+    height: 60px;
+}
+
 .img-github {
     width: 100px;
     height: 30px;
@@ -167,9 +172,4 @@ aside p {
     animation-duration: .7s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
-
-.img-project-icon {
-    width: 60px;
-    height: 60px;
 }
