@@ -141,8 +141,16 @@ footer p {
     width: 32px;
     height: 32px;
     padding: 0;
-    float: left;
     padding-top: 14px;
+    padding-left: 7px;
+}
+
+#img-github {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    padding-top: 14px;
+    padding-left: 7px;
 }
 
 footer nav {
