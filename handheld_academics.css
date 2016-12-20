@@ -14,12 +14,16 @@ table {
     margin-top: 1em;
     margin-bottom: 1em;
     font-family: "Times", Georgia, Serif;
-    font-size: 1em;
+    font-size: .9em;
     border-collapse: collapse;
 }
 
 table .highlight {
     background-color: #eee;
+}
+
+th {
+    font-size: .9em;
 }
 
 td {
