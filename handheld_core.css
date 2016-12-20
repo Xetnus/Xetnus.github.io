@@ -7,7 +7,7 @@ html {
 }
 
 header {
-    width: 99%;
+    width: 100%;
     margin: auto;
     text-align: center;
     padding-bottom: 10px;
@@ -44,6 +44,7 @@ header nav li {
     border-right: 1px solid #000;
     /* makes up for bug where extra space is added to the left of the list item that I couldn't fix */
     padding-right: 4.5px;
+    margin-top: 3px;
     margin-bottom: 3px;
 }
 
@@ -52,7 +53,7 @@ header nav li:last-child {
 }
 
 header nav li a {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #000000;
     text-decoration: none;
     padding: 0 5px 2px 5px;
@@ -75,7 +76,7 @@ header nav li a.active {
 
 p {
     font-size: 1.2em;
-    width: 95%;
+    width: 100%;
 }
 
 p a {
