@@ -10,11 +10,9 @@ p {
 
 table {
     width: 50%;
-    margin: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin: 1em auto;
     font-family: "Times", Georgia, Serif;
-    font-size: 1.2em;
+    font-size: 1.3em;
     border-collapse: collapse;
 }
 
