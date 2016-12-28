@@ -54,6 +54,7 @@
     Whether you are a recruiter or you just stumbled across my ePortfolio by chance, I would love to hear from you! Feel free to <a href="./contact.html">contact me</a> about anything. Otherwise, I hope you enjoy reading more about me as you browse my website.
     </p>
     <footer>
+        <div id="scroll-to-top"><p>^ scroll to top ^</p></div>
         <p>&copy; 2016 Grant W. Grubbs</p>
 	<a href="https://www.linkedin.com/in/grantgrubbs"><img id="img-linkedin" src="./images/social_icons/linkedin.png" alt="LinkedIn" title="Join my network on LinkedIn"/></a>
 	<a href="https://github.com/Xetnus"><img id="img-github" src="./images/social_icons/github.png" alt="GitHub" title="Check out my projects on GitHub"/></a>
@@ -66,5 +67,12 @@
         </ul>
 	</nav>
     </footer>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $("#scroll-to-top").click(function() {
+	    $("html,body").animate({scrollTop:0}, 150, 'swing');
+	});
+    </script>
 </body>
 </html>
