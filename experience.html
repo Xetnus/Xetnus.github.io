@@ -153,46 +153,5 @@
         </ul>
 	</nav>
     </footer>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>
-	var isAnimating = false;
-	// Controls the CSS animation of the arrow button
-	$(".img-container").click(function() {
-	    if (isAnimating) {
-		return;
-	    }
-
-	    isAnimating = true;
-	    var desc = $(this).data("desc");
-
-	    if ($(this).find(" .img-arrow-button").hasClass("btn-less")) {
-	        $("#" + desc).slideUp("slow");
-		$(this).find(".img-arrow-button").removeClass("btn-less");
-		$(this).find(".less").fadeOut("fast");
-		$(this).find(".img-arrow-button").addClass("btn-more");
-
-		setTimeout(fadeInMore(this), 300);
-		function fadeInMore(element) {
-		    $(element).find(".more").fadeIn("fast");
-		}
-	    } else {
-	        $("#" + desc).slideDown("slow");
-		$(this).find(".img-arrow-button").removeClass("btn-more");
-		$(this).find(".more").fadeOut("fast");
-		$(this).find(".img-arrow-button").addClass("btn-less");
-
-		setTimeout(fadeInLess(this), 300);
-		function fadeInLess(element) {
-		    $(element).find(".less").fadeIn("fast");
-		}
-	    }
-
-	    // Prevents spam clicking, which glitches the animation
-	    setTimeout(function() {
-		isAnimating = false;
-	    }, 600);
-	});
-    </script>
 </body>
 </html>
