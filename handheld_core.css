@@ -2,6 +2,10 @@
     display: none;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 header {
     width: 100%;
     margin: auto;
@@ -84,13 +88,6 @@ p a {
 
 p a:visited {
     color: purple;
-}
-
-#img-portrait {
-    display: block;
-    margin: 0 auto;
-    margin-top: -3px;
-    width: 100%;
 }
 
 footer {
