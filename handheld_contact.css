@@ -1,13 +1,18 @@
 h2 {
     width: 98%;
-    margin: auto;
+    margin: 0;
     margin-top: .8em;
+    margin-bottom: .2em;
     font-family: "Times", Georgia, Serif;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 h2:last-of-type {
-    margin-top: .2em;
+    margin-bottom: 1em;
+}
+
+p {
+    margin: 0 auto;
     margin-bottom: 1em;
 }
 
@@ -15,7 +20,7 @@ form {
     margin: auto;
     margin-top: 0.5em;
     margin-bottom: 1em;
-    width: 90%;
+    width: 98%;
 }
 
 label {
@@ -24,9 +29,21 @@ label {
     width: 100%;
 }
 
+#lbl-name {
+    float: none;
+    display: block;
+    margin-top: 1em;
+}
+
+#lbl-email {
+    float: none;
+    display: block;
+    margin-top: 1em;
+}
+
 #lbl-message {
     float: none;
-    display: inline-block;
+    display: block;
     margin-top: 1em;
 }
 
@@ -41,27 +58,28 @@ input {
     width: 100%;
     margin-top: 4px;
     border: 1px solid #7093ff;
-    padding: 3px;
+    padding: 4px 0;
     font-family: "Times", Georgia, Serif;
     font-size: 1.1em;
 }
 
 input:focus {
-    box-shadow: 0 0 10px #7093ff;
+    box-shadow: none;
 }
 
 textarea {
     display: block;
     margin-top: 4px;
     border: 1px solid #7093ff;
+    padding: 4px 0;
     font-family: "Times", Georgia, Serif;
-    font-size: 1.2em;
-    width: 103%;
+    font-size: 1.1em;
+    width: 100%;
     max-width: 100%;
 }
 
 textarea:focus {
-    box-shadow: 0 0 10px #7093ff;
+    box-shadow: none;
 }
 
 button {
