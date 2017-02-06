@@ -4,75 +4,161 @@
 
 html {
     overflow-x: hidden;
+    background: #eee;
 }
 
 header {
     width: 100%;
     margin: auto;
     margin-top: 1em;
-    text-align: center;
+    text-align: left;
     padding-bottom: 10px;
     border-bottom-style: solid;
     border-color: rgba(0, 0, 0, .4);
 }
 
 header h1 {
-    width: 100%;
-    margin: auto;
-    font-family: "Droid Serif", "Times", serif;
+    width: auto%;
+    margin: 0;
     margin-bottom: .2em;
+    display: inline;
 }
 
 header h1 a {
     text-decoration: none;
-    font-size: 1em;
+    font-family: "Droid Serif", "Times", serif;
+    font-size: .9em;
     color: black;
 }
 
-header nav {
-    width: 100%;
-    margin: auto;
-}
-
-header nav ul {
+.nav-menu-toggle {
+    border: solid 1px #ddd;
+    background: #ccc;
+    height: 35px;
+    width: 35px;
+    display: block;
+    float: right;
     text-align: center;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.nav-menu-toggle .toggle {
+    color: #fff;
+    line-height: 35px;
+}
+
+.nav-menu-wrap {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 65%;
+    -webkit-transition: all 450ms ease-in-out;
+    -moz-transition: all 450ms ease-in-out;
+    transition: all 450ms ease-in-out;
+    z-index: 3;
+    -moz-transform: translate3d(-100%, 0px, 0px) rotate(90deg);
+    -webkit-transform: translate3d(-100%, 0px, 0px) rotate(90deg);
+    -ms-transform: translate(-100%, 0%) rotate(90deg);
+    -o-transform: translate(-100%, 0%) rotate(90deg);
+    transform: translate3d(-100%, 0px, 0px) rotate(90deg);
+    -moz-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+}
+
+.nav-menu-wrap.active {
+    -moz-transform: translate3d(0%, 0px, 0px) rotate(0deg);
+    -webkit-transform: translate3d(0%, 0px, 0px) rotate(0deg);
+    -ms-transform: translate(0%, 0%) rotate(0deg);
+    -o-transform: translate(0%, 0%) rotate(0deg);
+    transform: translate3d(0%, 0px, 0px) rotate(0deg);
+}
+
+.nav-menu-background {
+    display: initial;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .75);
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in-out;
+    -moz-transition: opacity 400ms ease-in-out;
+    -o-transition: opacity 400ms ease-in-out;
+    transition: opacity 400ms ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden; 
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: -1;
+}
+
+.nav-menu-background.active {
+    opacity: 1;
+    z-index: 2;
+}
+ 
+.menu {
+    margin: 0;
     padding: 0;
-    margin: 0; 
+    height: auto;
 }
 
-header nav li {
-    display: inline-block;
-    border-right: 1px solid #000;
-    /* makes up for bug where extra space is added to the left of the list item that I couldn't fix */
-    padding-right: 4.5px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+.nav-menu {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: #eee;
 }
 
-header nav li:last-child {
-    border-right: none;
+.nav-menu li {
+    font-size: 18px;
+    line-height: 40px;
+    list-style-type: none;
+    display: block;
+    position: relative;
+    padding: 10px auto;
+    border-top: solid 1px #ccc;
 }
 
-header nav li a {
-    font-size: 1em;
-    color: #000000;
-    text-decoration: none;
-    padding: 0 5px 2px 5px;
-    outline: none; /* fixes Firefox's dotted outline on clicked-on anchors */
+.nav-menu li > a {
+    display: block;
+    color: #333;
+    position: relative;
+    -moz-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
 }
 
-@keyframes nav_fade_in {
-    from { background-color: white; }
-    to { background-color: #4CAF50; }
-}
-
-header nav li a.active {
+.nav-menu li .active {
     color: white;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    animation-name: nav_fade_in;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
+    background: #4caf50;
+}
+
+.nav-menu li sup {
+    display: none;
+}
+
+.nav-menu .close {
+    cursor: pointer;
+    background: #ccc;
+    -moz-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    font-size: 18px;
+}
+
+.nav-menu .close i {
+    float: right;
 }
 
 p {

@@ -9,6 +9,8 @@
     <meta name="author" content="Grant Grubbs">
     <meta name="viewport" content="initial-scale=1, width=device-width">
     
+    <script src="https://use.fontawesome.com/0f57fb2e50.js"></script>
+
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" media="screen" href="./core.css">
     <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./handheld_core.css" type="text/css">
@@ -24,20 +26,25 @@
     <div id="left-border"></div>
     <div id="right-border"></div>
     <header>
-        <h1><a href="./index.html" title="Grant W. Grubbs" rel="home">Grant W. Grubbs</a/></h1>
-
-	<nav>
-        <ul>
+        <h1><a href="./index.html" title="Grant W. Grubbs" rel="home">Grant W. Grubbs</a></h1>
+        <div class="nav-menu-toggle">
+            <i class="fa fa-bars toggle"></i>
+        </div>
+	<nav class="nav-menu-wrap">
+        <ul class="nav-menu menu">
+	    <li class="close">close menu <i class="fa icon fa-times"></i></li>
 	    <li id="nav-item-index"><a class="active" href="./index.html">home</a></li>
 	    <li id="nav-item-experience"><a href="./experience.html">experience</a></li>
 	    <li id="nav-item-academics"><a href="./academics.html">academics</a></li>
 	    <li id="nav-item-contact"><a href="./contact.html">contact</a></li>
+	    <li id="nav-item-resume"><a href="./grant_grubbs'_resume.pdf">résumé<sup> PDF</sup></a></li>
         </ul>
 	</nav>
-
+	<div class="nav-menu-background"></div>
     </header>
 
     <img id="img-portrait" src="./images/welcome.png" alt="Portrait">
+
     <p id="status">
     <b>Status as of Winter Break 2016-17:</b> Searching for software engineering co-op for the upcoming summer and fall
     </p>
@@ -48,7 +55,7 @@
     Last summer, I was contracted as a web developer for NetCuro, a local startup company in the alpha stage of development. I worked on both the front-end and back-end of their website using HTML, JavaScript, Python and other languages. Throughout the 2016-17 school year, I will be searching for a full-time software engineering co-op to take place during the summer and fall of 2017.
     </p>
     <p>
-    Originally from Reading, Pennsylvania, I have traveled around the United States and to other parts of the world. When I am not concentrating on my schoolwork, you might find me working on personal projects, participating in club activities or reading books about parapsychology, a topic I am passionate about.
+    Originally from Reading, Pennsylvania, I have traveled around the United States and to other parts of the world. When I am not concentrating on my schoolwork, you might find me working on personal projects, participating in club activities or reading books.
     </p>
     <p>
     Whether you are a recruiter or you just stumbled across my ePortfolio by chance, I would love to hear from you! Feel free to <a href="./contact.html">contact me</a> about anything. Otherwise, I hope you enjoy reading more about me as you browse my website.
@@ -56,6 +63,7 @@
     <footer>
         <div id="scroll-to-top"><p>^ scroll to top ^</p></div>
         <p>&copy; 2017 Grant W. Grubbs</p>
+
 	<a href="https://www.linkedin.com/in/grantgrubbs"><img id="img-linkedin" src="./images/social_icons/linkedin.png" alt="LinkedIn" title="Join my network on LinkedIn"/></a>
 	<a href="https://github.com/Xetnus"><img id="img-github" src="./images/social_icons/github.png" alt="GitHub" title="Check out my projects on GitHub"/></a>
         <nav>
@@ -70,8 +78,23 @@
     
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
-        $("#scroll-to-top").click(function() {
-	    $("html,body").animate({scrollTop:0}, 150, 'swing');
+	$(document).ready(function() {
+            $("#scroll-to-top").click(function() {
+	        $("html,body").animate({scrollTop:0}, 150, 'swing');
+    	    });
+
+  	    var nav_menu = $('.nav-menu');
+	    var nav_menu_wrap = $('.nav-menu-wrap');
+	    var nav_menu_background = $('.nav-menu-background');
+
+	    function toggle_menu() {
+	        nav_menu_wrap.toggleClass('active');
+	        nav_menu_background.toggleClass('active');
+	    }
+
+	    $('.nav-menu-toggle, .nav-menu-background, .nav-menu .close').on('click', function() {
+	        toggle_menu();
+	    });
 	});
     </script>
 </body>

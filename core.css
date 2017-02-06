@@ -66,9 +66,13 @@ header nav li:last-child {
     border-right: none;
 }
 
+.close, .nav-menu-toggle, .nav-menu-background {
+    display: none;
+}
+
 header nav li a {
-    font-size: 1.8em;
     color: #000;
+    font-size: 1.8em;
     text-decoration: none;
     padding: 0 8px 4px 8px;
     outline: none; /* fixes Firefox's dotted outline on clicked-on anchors */
@@ -97,6 +101,10 @@ header nav li a.active {
     animation-name: nav_fade_in;
     animation-duration: .5s;
     animation-fill-mode: forwards;
+}
+
+sup {
+    font-size: 12px;
 }
 
 p {
