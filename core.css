@@ -39,7 +39,7 @@ header h1 {
 
 header h1 a {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: black;
 }
 
@@ -72,7 +72,7 @@ header nav li:last-child {
 
 header nav li a {
     color: #000;
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-decoration: none;
     padding: 0 8px 4px 8px;
     outline: none; /* fixes Firefox's dotted outline on clicked-on anchors */
@@ -104,13 +104,17 @@ header nav li a.active {
 }
 
 sup {
-    font-size: 12px;
+    font-size: 10px;
+}
+
+h2 {
+    font-size: 1.3em;
 }
 
 p {
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.4em;
+    font-size: 1.2em;
     width: 50%;
 }
 
@@ -138,7 +142,7 @@ footer {
 }
 
 footer p {
-    width: 20%;
+    width: auto;
     font-size: 1.2em;
     margin: 0;
     margin-left: 15px;
@@ -175,7 +179,7 @@ footer nav {
 }
 
 footer nav li {
-    font-size: 1.3em;
+    font-size: 1.2em;
     display: inline;
     border-right: 1px solid #000;
     /* makes up for glitch where extra space is added to the left of the list item that I couldn't fix */

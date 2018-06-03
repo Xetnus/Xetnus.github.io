@@ -4,11 +4,6 @@ h2 {
     margin-top: .8em;
     margin-bottom: .2em;
     font-family: "Times", Georgia, Serif;
-    font-size: 1.4em;
-}
-
-h2:last-of-type {
-    margin-bottom: 1em;
 }
 
 p {
@@ -60,12 +55,8 @@ input {
     border: 1px solid #7093ff;
     padding: 4px 0;
     font-family: "Times", Georgia, Serif;
-    font-size: 1.1em;
+    font-size: 1em;
     background: #fbfbfb;
-}
-
-input:focus {
-    box-shadow: none;
 }
 
 textarea {
@@ -74,14 +65,10 @@ textarea {
     border: 1px solid #7093ff;
     padding: 4px 0;
     font-family: "Times", Georgia, Serif;
-    font-size: 1.1em;
+    font-size: 1em;
     width: 100%;
     max-width: 100%;
     background: #fbfbfb;
-}
-
-textarea:focus {
-    box-shadow: none;
 }
 
 button {
@@ -104,7 +91,7 @@ button {
     cursor: pointer;
     color: #ffffff;
     font-family: "Times", Georgia, Serif;
-    font-size: 1.6em;
+    font-size: 1.1em;
     font-weight: bold;
     padding: 6px 18px;
     text-decoration: none;
