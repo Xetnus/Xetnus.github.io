@@ -15,31 +15,28 @@ form {
     margin: auto;
     margin-top: 0.5em;
     margin-bottom: 1em;
-    width: 98%;
+    width: 100%;
 }
 
 label {
     margin: auto;
     margin-bottom: 1em;
-    width: 100%;
+    width: 97%;
 }
 
 #lbl-name {
     float: none;
-    display: block;
-    margin-top: 1em;
+    display: inline-block;
 }
 
 #lbl-email {
     float: none;
-    display: block;
-    margin-top: 1em;
+    display: inline-block;
 }
 
 #lbl-message {
     float: none;
-    display: block;
-    margin-top: 1em;
+    display: inline-block;
 }
 
 span {
@@ -53,7 +50,7 @@ input {
     width: 100%;
     margin-top: 4px;
     border: 1px solid #7093ff;
-    padding: 4px 0;
+    padding: 4px 5px;
     font-family: "Times", Georgia, Serif;
     font-size: 1em;
     background: #fbfbfb;
@@ -63,7 +60,7 @@ textarea {
     display: block;
     margin-top: 4px;
     border: 1px solid #7093ff;
-    padding: 4px 0;
+    padding: 4px 5px;
     font-family: "Times", Georgia, Serif;
     font-size: 1em;
     width: 100%;
@@ -91,7 +88,7 @@ button {
     cursor: pointer;
     color: #ffffff;
     font-family: "Times", Georgia, Serif;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
     padding: 6px 18px;
     text-decoration: none;

@@ -21,21 +21,23 @@ form {
 label {
     margin: auto;
     margin-bottom: 1em;
-    width: 45%;
+    width: 98%;
 }
 
 #lbl-name {
-    float: left;
+    float: none;
+    display: inline-block;
 }
 
 #lbl-email {
-    float: right;
+    float: none;
+    display: inline-block;
 }
 
 #lbl-message {
     float: none;
     display: inline-block;
-    margin-top: 1em;
+    margin-bottom: 1.2em;
 }
 
 span {
@@ -60,8 +62,9 @@ textarea {
     border: 1px solid #7093ff;
     font-family: "Times", Georgia, Serif;
     font-size: 1.1em;
-    width: 103%;
-    max-width: 225%;
+    padding: 7px;
+    width: 100%;
+    max-width: 100%;
 }
 
 button {
